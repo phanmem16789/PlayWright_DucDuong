@@ -15,6 +15,10 @@ class GeneralPage{
     async launchBrowser(){
         await this.page.goto(`http://railwaysg1.somee.com/Page/HomePage.cshtml`);
     }
+
+    async getTitle(){
+         return this.page.title;
+    }
 }
 
 module.exports = GeneralPage;
