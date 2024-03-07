@@ -6,7 +6,7 @@ class HomePage extends GeneralPage{
     welcomeLbl: Locator
 
     constructor(page: Page){
-        super();
+        super(page);
         this.welcomeLbl=page.locator(`xpath=//h1[.='Welcome to QA Railway']`);
     }
 
